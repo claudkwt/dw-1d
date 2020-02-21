@@ -53,7 +53,8 @@ while not done:
     sleep(0.5)
 
     if ok:
-        done = True
+        print(movement_list)
+        db.child("movement_list").set(movement_list, user['idToken'])
     '''
     We loop through the key (button name), value (gpio number) pair of the buttons
     dictionary and check whether the button at the corresponding GPIO is being
@@ -69,5 +70,3 @@ while not done:
 
 
 # Write to database once the OK button is pressed
-print(movement_list)
-db.child("movement_list").set(movement_list, user['idToken'])
