@@ -58,3 +58,6 @@ for i in movement_list:
     if i == 'right':
         robot.wheels(100,-100)
         robot.sleep(1)
+        
+robot.wheels(0,0)
+robot.quit()
