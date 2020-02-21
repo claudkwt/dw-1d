@@ -49,12 +49,12 @@ while no_movements:
 # 'right' movement => robot.wheels(100, -100)
 
 for i in movement_list:
-    if up:
+    if i == 'up':
         robot.wheels(100,100)
         robot.sleep(1)
-    if left:
+    if i == 'left':
         robot.wheels(-100,100)
         robot.sleep(1)
-    if right:
+    if i == 'right':
         robot.wheels(100,-100)
         robot.sleep(1)
