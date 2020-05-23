@@ -12,7 +12,7 @@ class MySMClass(sm.SM):
         # These two lines is to stop the robot
         # by pressing the backward button.
         # This only works when using the real robot.
-        # It will not work in simulator.
+        # It will not work in simulator
         if inp.button_backward:
             return 'halt', io.Action(0, 0)
         #####################################
